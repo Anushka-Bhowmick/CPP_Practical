@@ -13,7 +13,9 @@ class Circle : public Shape {
 private:
     double radius;
 public:
-    Circle(double r) : radius(r) {}
+    Circle(double r){
+        radius = r;
+    }
     void display() override {
         cout << "Shape: Circle" << endl;
         cout << "Radius: " << radius << endl;
@@ -28,7 +30,10 @@ class Rectangle : public Shape {
 private:
     double length, width;
 public:
-    Rectangle(double l, double w) : length(l), width(w) {}
+    Rectangle(double l, double w){
+        length = l;
+        width = w;
+    }
     void display() override {
         cout << "Shape: Rectangle" << endl;
         cout << "Length: " << length << endl;
@@ -44,7 +49,11 @@ class Trapezoid : public Shape {
 private:
     double a, b, height;
 public:
-    Trapezoid(double base1, double base2, double h) : a(base1), b(base2), height(h) {}
+    Trapezoid(double base1, double base2, double h){
+        a = base1;
+        b = base2;
+        height = h;
+    }
     void display() override {
         cout << "Shape: Trapezoid" << endl;
         cout << "Base 1: " << a << endl;
